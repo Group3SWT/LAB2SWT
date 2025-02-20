@@ -36,10 +36,9 @@ public class OrderDao extends DBContext {
                 ProductOrder p = new ProductOrder(rs.getInt(1), rs.getString(2),null, rs.getString(3), rs.getString(4), rs.getInt(5), 0, 0);
                 list.add(p);
             }
-        } catch (Exception
-                
-                
-                e) {
+        } catch (Exception e) {
+                System.err.println("Lỗi khi lấy danh sách ProductOrder: " + e.getMessage());
+                e.printStackTrace();
         }
         return list;
 
