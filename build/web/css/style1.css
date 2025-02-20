@@ -264,17 +264,13 @@ a:focus {
 .user_option .order_online:hover {
   background-color: #e69c00;
 }
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
 .custom_nav-container .navbar-toggler {
   padding: 0;
   width: 37px;
   height: 42px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+     outline: none;
 }
 
 .custom_nav-container .navbar-toggler span {
