@@ -40,6 +40,7 @@
                     </c:if>
                     <div class="mb-3" style="display: none">
                         <label for="id" class="form-label">id</label>
+
                         <input id="id" value="${requestScope.p.id}" name="id" type="text" class="form-control"  >
 
                     </div>
