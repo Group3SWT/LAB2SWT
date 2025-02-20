@@ -122,8 +122,9 @@
                 <!-- Add the form tag -->
                 <form id="paymentForm" action="pay" method="POST">
                     <div class="mb-3">
-                        <label class="form-label">ID Customer</label>
+                        <label class="form-label">ID Customer
                         <input name="uid" type="text" value="${requestScope.uid}" class="form-control">
+                        </label>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Total price you need to pay!</label>
