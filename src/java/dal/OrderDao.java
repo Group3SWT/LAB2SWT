@@ -96,7 +96,7 @@ public class OrderDao extends DBContext {
         } catch (Exception e) {
             System.out.println(e);
         }
-        return null;
+        return list;
     }
  public void deleteOrderDetailbyoid(int oid) {
         String sql = "delete OrderDetail  where oid =?";
