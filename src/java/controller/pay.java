@@ -85,7 +85,6 @@ public class pay extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
         DecimalFormat f = new DecimalFormat("##.##");
         String mess="";
         int id = Integer.parseInt(request.getParameter("uid"));
