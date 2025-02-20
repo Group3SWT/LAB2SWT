@@ -86,7 +86,7 @@ public class admin_add extends HttpServlet {
             float price = Float.parseFloat(price1);
             int tid = Integer.parseInt(tid1);
 
-            if (name == "" || img == "" || des == "" || price1 == "" || tid1 == "") {
+            if (name.equals("") || img.equals("") || des.equals("") || price1.equals("") || tid1.equals("")) {
                 request.setAttribute("err", "You must input information!");
                 request.getRequestDispatcher("view/admin/add.jsp").forward(request, response);
 
