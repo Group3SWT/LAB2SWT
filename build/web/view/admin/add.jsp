@@ -42,9 +42,9 @@
                         </div>
                     </c:if>
                     <div class="mb-3">
-                        <label  class="form-label">Product name</label>
+                        <label  class="form-label">Product name
                         <input  name="name" type="text" class="form-control"  >
-
+                        </label>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Image</label>
