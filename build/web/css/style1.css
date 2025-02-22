@@ -519,8 +519,6 @@ a:focus {
 .food_section .box {
   position: relative;
   margin-top: 25px;
-  
-  border-radius: 10px;
   color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
