@@ -77,7 +77,7 @@ public class admin_useradd extends HttpServlet {
             String pass = request.getParameter("pass");
             String role1 = request.getParameter("role");
             int role = Integer.parseInt(role1);
-            if (name == "" || email == "" || pass == "" || role1 == "") {
+            if (name.isEmpty() || email.isEmpty() || pass.isEmpty() || role1.isEmpty()) {
                 request.setAttribute("err", "You must input information!");
                 request.getRequestDispatcher("view/admin/user-add.jsp").forward(request, response);
             } else {
