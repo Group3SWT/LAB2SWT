@@ -131,13 +131,13 @@
                         <input name="total" type="text" value="${requestScope.total}" class="form-control">
             </div>
             <div class="mb-3">
-                <label class="form-label">You need to input address</label>
-                <textarea class="form-control" id="id" name="address"></textarea>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">You must input time you can receive the product!</label>
-                <input name="date" type="date" pattern="dd-mm-yy" class="form-control">
-            </div>
+    <label for="address" class="form-label">You need to input address</label>
+    <textarea class="form-control" id="address" name="address"></textarea>
+</div>
+<div class="mb-3">
+    <label for="date" class="form-label">You must input time you can receive the product!</label>
+    <input id="date" name="date" type="date" pattern="dd-mm-yy" class="form-control">
+</div>
 
             <div style="display: flex; margin: 10px">
                 <button type="button" onclick="setPay('${requestScope.uid}')" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-secondary">
