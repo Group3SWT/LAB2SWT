@@ -38,11 +38,11 @@
 	      decrease.addEventListener('click', function (e) { decreaseValue(e, quantityAmount); });
 	    }
 
-	    function init() {
-	        for (var i = 0; i < quantity.length; i++ ) {
-						createBindings(quantity[i]);
-	        }
-	    };
+	   function init() {
+    for (const item of quantity) { 
+        createBindings(item);
+ 	   }
+	};
 
 	    function increaseValue(event, quantityAmount) {
 	        value = parseInt(quantityAmount.value, 10);
