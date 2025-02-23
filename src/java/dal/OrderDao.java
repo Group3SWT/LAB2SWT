@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package java.dal;    
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.sql.Connection;
@@ -37,8 +38,7 @@ public class OrderDao extends DBContext {
                 list.add(p);
             }
         } catch (Exception e) {
-                System.err.println("Lỗi khi lấy danh sách ProductOrder: " + e.getMessage());
-                e.printStackTrace();
+                LOGGER.log(Level.SEVERE, "Lỗi khi lấy danh sách ProductOrder: " + e.getMessage(), e);
         }
         return list;
 
